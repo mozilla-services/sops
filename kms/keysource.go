@@ -135,7 +135,7 @@ func NewMasterKey(arn string, role string, context map[string]*string) *MasterKe
 func NewMasterKeyFromArn(arn string, context map[string]*string, awsProfile string) *MasterKey {
 	k := &MasterKey{}
 	arn = strings.Replace(arn, " ", "", -1)
-	roleIndex := strings.Index(arn, "+arn:aws:iam::")
+	roleIndex := strings.Index(arn, "+arn:aws")
 	if roleIndex > 0 {
 		k.Arn = arn[:roleIndex]
 		k.Role = arn[roleIndex+1:]
