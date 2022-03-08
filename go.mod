@@ -21,6 +21,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mitchellh/go-wordwrap v1.0.0
 	github.com/ory/dockertest v3.3.4+incompatible
+	github.com/pelletier/go-toml v1.8.2-0.20210203134853-b4f0a950bf95
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.4.2
 	github.com/stretchr/testify v1.5.1
@@ -34,6 +35,7 @@ require (
 	google.golang.org/protobuf v1.25.0
 	gopkg.in/ini.v1 v1.44.0
 	gopkg.in/urfave/cli.v1 v1.20.0
+<<<<<<< HEAD
 	gopkg.in/yaml.v3 v3.0.0-20210107172259-749611fa9fcc
 )
 
@@ -90,4 +92,7 @@ require (
 	gopkg.in/square/go-jose.v2 v2.3.1 // indirect
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 	gotest.tools v2.2.0+incompatible // indirect
+=======
+	gotest.tools v2.2.0+incompatible
+>>>>>>> cc2ee88b7 (add toml store)
 )
