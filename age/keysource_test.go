@@ -13,8 +13,7 @@ import (
 func TestMasterKeysFromRecipientsEmpty(t *testing.T) {
 	assert := assert.New(t)
 
-	commaSeparatedRecipients := ""
-	recipients, err := MasterKeysFromRecipients(commaSeparatedRecipients)
+	recipients, err := MasterKeysFromRecipients([]string{})
 
 	assert.NoError(err)
 
