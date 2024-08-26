@@ -264,7 +264,7 @@ func getGoogleCredentials() ([]byte, error) {
 
 		return []byte(defaultCredentials), nil
 	}
-	return nil, fmt.Errorf("could not find google credential file")
+	return nil, fmt.Errorf("could not find Google credential file")
 }
 
 // getGoogleOAuthToken returns the SopsGoogleCredentialsOauthToken variable,
