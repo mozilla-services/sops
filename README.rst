@@ -222,9 +222,8 @@ Encrypting with SSH keys via age is not yet supported by SOPS.
 Encrypting using GCP KMS
 ~~~~~~~~~~~~~~~~~~~~~~~~
 GCP KMS has support for authorization with the use of `Application Default Credentials
-<https://developers.google.com/identity/protocols/application-default-credentials>`_ and access tokens.
+<https://developers.google.com/identity/protocols/application-default-credentials>`_ and using an oauth2 token.
 Application default credentials precedes the use of access token.
-
 
 Using Application Default Credentials you can authorize by doing this:
 
@@ -240,19 +239,15 @@ you can enable application default credentials using the sdk:
 
     $ gcloud auth application-default login
 
-
-
 Using oauth tokens you can authorize by doing this:
 
 .. code:: sh
-
-    $ export CLOUDSDK_AUTH_ACCESS_TOKEN=<your access token>
+    $ export GOOGLE_OAUTH_ACCESS_TOKEN=<your access token>
 
 Or if you are logged in you can authorize by generating an access token:
 
 .. code:: sh
-
-    $ export CLOUDSDK_AUTH_ACCESS_TOKEN=$(gcloud auth print-access-token)
+    $ export GOOGLE_OAUTH_ACCESS_TOKEN="$(gcloud auth print-access-token)"
 
 
 Encrypting/decrypting with GCP KMS requires a KMS ResourceID. You can use the
