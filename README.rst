@@ -248,7 +248,7 @@ Using oauth tokens you can authorize by doing this:
 
     $ export CLOUDSDK_AUTH_ACCESS_TOKEN=<your access token>
 
-If you are already logged in 
+Or if you are logged in you can authorize by generating an access token:
 
 .. code:: sh
 
