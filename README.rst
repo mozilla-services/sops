@@ -242,11 +242,13 @@ you can enable application default credentials using the sdk:
 Using oauth tokens you can authorize by doing this:
 
 .. code:: sh
+    
     $ export GOOGLE_OAUTH_ACCESS_TOKEN=<your access token>
 
 Or if you are logged in you can authorize by generating an access token:
 
 .. code:: sh
+
     $ export GOOGLE_OAUTH_ACCESS_TOKEN="$(gcloud auth print-access-token)"
 
 
