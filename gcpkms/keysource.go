@@ -24,8 +24,8 @@ const (
 	// a path to a credentials file, or directly as the variable's value in JSON
 	// format.
 	SopsGoogleCredentialsEnv = "GOOGLE_CREDENTIALS"
-	// SopsGoogleCredentialsOAuthToken can be set as an environment variable as either
-	// a path to a file, or directly as the varialbe's value
+	// SopsGoogleCredentialsOAuthToken is the environment variable used for the
+	// GCP Oauth2 Token.
 	SopsGoogleCredentialsOAuthToken = "GOOGLE_OAUTH_ACCESS_TOKEN"
 	// KeyTypeIdentifier is the string used to identify a GCP KMS MasterKey.
 	KeyTypeIdentifier = "gcp_kms"
@@ -207,8 +207,8 @@ func (key *MasterKey) TypeToIdentifier() string {
 	return KeyTypeIdentifier
 }
 
-// newKMSClient returns a GCP KMS client configured with the credentialJSON
-// and/or grpcConn, falling back to environmental defaults.
+// newKMSClient returns a GCP KMS client configured with the credentialJSON,
+// tokenSource and/or grpcConn, falling back to environmental defaults.
 // It returns an error if the ResourceID is invalid, or if the setup of the
 // client fails.
 func (key *MasterKey) newKMSClient() (*kms.KeyManagementClient, error) {
@@ -254,8 +254,9 @@ func (key *MasterKey) newKMSClient() (*kms.KeyManagementClient, error) {
 
 // getGoogleCredentials returns the SopsGoogleCredentialsEnv variable, as
 // either the file contents of the path of a credentials file, or as value in
-// JSON format. It returns an error if the file cannot be read, and may return
-// a nil byte slice if no value is set.
+// JSON format.
+// It returns an error if the environment variable is not set, or the file
+// cannot be read.
 func getGoogleCredentials() ([]byte, error) {
 	if defaultCredentials, ok := os.LookupEnv(SopsGoogleCredentialsEnv); ok && len(defaultCredentials) > 0 {
 		if _, err := os.Stat(defaultCredentials); err == nil {
@@ -269,7 +270,7 @@ func getGoogleCredentials() ([]byte, error) {
 
 // getGoogleOAuthToken returns the SopsGoogleCredentialsOauthToken variable,
 // as the oauth token.
-// It returns an error and nil if the envrionment variable is not set.
+// It returns an error if the envrionment variable is not set.
 func getGoogleOAuthToken() (oauth2.TokenSource, error) {
 	if token, isSet := os.LookupEnv(SopsGoogleCredentialsOAuthToken); isSet {
 		tokenSource := oauth2.StaticTokenSource(
