@@ -41,9 +41,6 @@ func (x *Key) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[0]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *Key) String() string {
@@ -54,7 +51,6 @@ func (*Key) ProtoMessage() {}
 
 func (x *Key) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[0]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -172,9 +168,6 @@ func (x *PgpKey) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[1]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *PgpKey) String() string {
@@ -185,7 +178,6 @@ func (*PgpKey) ProtoMessage() {}
 
 func (x *PgpKey) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[1]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -226,9 +218,6 @@ func (x *KmsKey) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[2]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[2]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *KmsKey) String() string {
@@ -239,7 +228,6 @@ func (*KmsKey) ProtoMessage() {}
 
 func (x *KmsKey) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[2]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -310,9 +298,6 @@ func (x *GcpKmsKey) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[3]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[3]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *GcpKmsKey) String() string {
@@ -323,7 +308,6 @@ func (*GcpKmsKey) ProtoMessage() {}
 
 func (x *GcpKmsKey) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[3]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -361,9 +345,6 @@ func (x *VaultKey) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[4]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[4]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *VaultKey) String() string {
@@ -374,7 +355,6 @@ func (*VaultKey) ProtoMessage() {}
 
 func (x *VaultKey) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[4]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -426,9 +406,6 @@ func (x *AzureKeyVaultKey) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[5]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[5]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *AzureKeyVaultKey) String() string {
@@ -439,7 +416,6 @@ func (*AzureKeyVaultKey) ProtoMessage() {}
 
 func (x *AzureKeyVaultKey) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[5]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -489,9 +465,6 @@ func (x *AgeKey) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[6]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[6]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *AgeKey) String() string {
@@ -502,7 +475,6 @@ func (*AgeKey) ProtoMessage() {}
 
 func (x *AgeKey) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[6]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -539,9 +511,6 @@ func (x *EncryptRequest) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[7]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[7]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *EncryptRequest) String() string {
@@ -552,7 +521,6 @@ func (*EncryptRequest) ProtoMessage() {}
 
 func (x *EncryptRequest) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[7]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -595,9 +563,6 @@ func (x *EncryptResponse) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[8]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *EncryptResponse) String() string {
@@ -608,7 +573,6 @@ func (*EncryptResponse) ProtoMessage() {}
 
 func (x *EncryptResponse) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[8]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -645,9 +609,6 @@ func (x *DecryptRequest) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[9]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *DecryptRequest) String() string {
@@ -658,7 +619,6 @@ func (*DecryptRequest) ProtoMessage() {}
 
 func (x *DecryptRequest) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[9]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -701,9 +661,6 @@ func (x *DecryptResponse) Reset() {
 	mi := &file_keyservice_keyservice_proto_msgTypes[10]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
-	mi := &file_keyservice_keyservice_proto_msgTypes[10]
-	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
-	ms.StoreMessageInfo(mi)
 }
 
 func (x *DecryptResponse) String() string {
@@ -714,7 +671,6 @@ func (*DecryptResponse) ProtoMessage() {}
 
 func (x *DecryptResponse) ProtoReflect() protoreflect.Message {
 	mi := &file_keyservice_keyservice_proto_msgTypes[10]
-	if x != nil {
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -838,7 +794,6 @@ func file_keyservice_keyservice_proto_rawDescGZIP() []byte {
 
 var file_keyservice_keyservice_proto_msgTypes = make([]protoimpl.MessageInfo, 12)
 var file_keyservice_keyservice_proto_goTypes = []any{
-var file_keyservice_keyservice_proto_goTypes = []any{
 	(*Key)(nil),              // 0: Key
 	(*PgpKey)(nil),           // 1: PgpKey
 	(*KmsKey)(nil),           // 2: KmsKey
@@ -878,7 +833,6 @@ func file_keyservice_keyservice_proto_init() {
 	if File_keyservice_keyservice_proto != nil {
 		return
 	}
-	file_keyservice_keyservice_proto_msgTypes[0].OneofWrappers = []any{
 	file_keyservice_keyservice_proto_msgTypes[0].OneofWrappers = []any{
 		(*Key_KmsKey)(nil),
 		(*Key_PgpKey)(nil),
